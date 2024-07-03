@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch index.html in Brave",
+            "file": "${workspaceFolder}/index.html",
+            "runtimeExecutable": "brave-browser",
+            "runtimeArgs": [
+                "--new-window"
+            ],
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
