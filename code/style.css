@@ -1,256 +1,210 @@
 body {
-    background-color: #373A40; /* Dark theme background color */
-    color: white; /* Dark theme text color */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding: 0;
-    height: 1000px;
+  background-color: #373a40; /* Dark theme background color */
+  color: white; /* Dark theme text color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  height: 1000px;
 }
-.space{
-    margin-top: 100px;
+.space {
+  margin-top: 100px;
 }
 .name .fa-infinity {
-    position: absolute;
-    top: 32px;
-    left: 25px;
-    color: red;
-    animation: icon 2s ease 0s 1 normal forwards;
+  position: absolute;
+  top: 32px;
+  left: 25px;
+  color: red;
+  animation: icon 2s ease 0s 1 normal forwards;
 }
 
 .name h3 {
-    position: absolute;
-    left: 50px;
-    color: white;
-    animation: name 2s ease 0s 1 normal forwards;
+  position: absolute;
+  left: 50px;
+  color: white;
+  animation: name 2s ease 0s 1 normal forwards;
 }
 
 nav {
-    background-color: #181818;
-    color: white;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
+  background-color: #181818;
+  color: white;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .menu {
-    display: flex;
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
 }
 
 .menu li {
-    position: relative;
+  position: relative;
 }
 
 .menu li a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .menu li:hover {
-    background-color: #555;
-    border-radius: 20px;
+  background-color: #555;
+  border-radius: 20px;
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    z-index: 1;
-    border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .dropdown-menu li {
-    display: flex;
+  display: flex;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    top: 32px;
-    right: 205px;
-    animation: serach 2s ease 0s 1 normal forwards;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 32px;
+  right: 205px;
+  animation: serach 2s ease 0s 1 normal forwards;
 }
 
 .fa-user-plus {
-    position: absolute;
-    color: white;
-    top: 32px;
-    right: 160px;
-    animation: user 2s ease 0s 1 normal forwards;
+  position: absolute;
+  color: white;
+  top: 32px;
+  right: 160px;
+  animation: user 2s ease 0s 1 normal forwards;
 }
 
 /* toggle dark theme */
 
 .theme-icon {
-    cursor: pointer;
-    position: absolute;
-    left: 60px;
-    top: 5px;
-    font-size: 25px;
-    transition: color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  position: absolute;
+  left: 60px;
+  top: 5px;
+  font-size: 25px;
+  transition: color 0.3s ease; /* Smooth transition */
 }
 
 /* Light mode styles */
 body.light-mode {
-    background-color: #ffffff; /* Light theme background color */
-    color: black; /* Light theme text color */
+  background-color: #ffffff; /* Light theme background color */
+  color: black; /* Light theme text color */
 }
 
 body.light-mode a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 body.light-mode .theme-icon {
-    color: white; /* Light theme icon color */
+  color: white; /* Light theme icon color */
 }
 
 body.dark-mode .theme-icon {
-    color: white; /* Dark theme icon color */
+  color: white; /* Dark theme icon color */
 }
 
 /* slider */
-@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
+@import url("https://fonts.cdnfonts.com/css/poppins");
 
-.banner{
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
- 
-}
-.banner .slider{
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 30s linear infinite;
-    z-index: 2;
-}
-@keyframes autoRun{
-    from{
-        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    }to{
-        transform: perspective(1000px) rotateX(-6deg) rotateY(360deg);
-    }
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.banner .slider .item{
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(550px);
+.banner .slider {
+  position: absolute;
+  width: 160px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  top: 10%;
+  left: calc(50% - 80px); /* Adjust left position */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 30s linear infinite;
+  z-index: 2;
 }
-.banner .slider .item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-6deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-6deg) rotateY(360deg);
+  }
 }
-.banner .content{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    padding-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(450px); /* Adjust translateZ for smaller size */
 }
-.banner .content h1{
-    font-family: 'ICA Rubrik';
-    font-size: 16em;
-    line-height: 1em;
-    color: #25283B;
-    position: relative;
+
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.banner .content h1::after{
-    position: absolute;
-    inset: 0 0 0 0;
-    content: attr(data-content);
-    z-index: 2;
-    -webkit-text-stroke: 2px #d2d2d2;
-    color: transparent;
+
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
-.banner .content .author{
-    font-family: Poppins;
-    text-align: right;
-    max-width: 200px;
-}
-.banner .content h2{
-    font-size: 3em;
-}
-.banner .model{
-    background-image: url(/Assests/image/yorichi.png);
-    width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 130%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 1;
-}
+
 @media screen and (max-width: 1023px) {
-    .banner .slider{
-        width: 160px;
-        height: 200px;
-        left: calc(50% - 80px);
-    }
-    .banner .slider .item{
-        transform: 
-            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-            translateZ(300px);
-    }
-    .banner .content h1{
-        text-align: center;
-        width: 100%;
-        text-shadow: 0 10px 20px #000;
-        font-size: 7em;
-    }
-    .banner .content .author{
-        color: #fff;
-        padding: 20px;
-        text-shadow: 0 10px 20px #000;
-        z-index: 2;
-        max-width: unset;
-        width: 100%;
-        text-align: center;
-        padding: 0 30px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .banner .slider{
-        width: 100px;
-        height: 150px;
-        left: calc(50% - 50px);
-    }
-    .banner .slider .item{
-        transform: 
-            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-            translateZ(180px);
-    }
-    .banner .content h1{
-        font-size: 5em;
-    }
+  .banner .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .banner .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
+  }
+}
