@@ -1,9 +1,7 @@
-# Anime Website by Poison
+   # | Anime Website by Poison  |
 
-## Statistics
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/poison291/Anime-website)
-![GitHub contributors](https://img.shields.io/github/contributors/poison291/Anime-website)
+
 
 ## GitHub Stats
 
@@ -17,6 +15,10 @@
 
 Thank you to all the contributors who have helped with this project!
 
+## [Join Project](https://discord.gg/j2gZH7aT2a)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT
+) file for details.
