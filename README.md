@@ -7,11 +7,11 @@
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=poison291&repo=Anime-website)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=poison291&show_icons=true&theme=radical)
 
 ## GitHub Activity Graph
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=poison291&repo=Anime-website)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Poison github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=poison291&theme=dracula)](https://github.com/poison291/github-readme-activity-graph)
 
 ## Contributors
 
