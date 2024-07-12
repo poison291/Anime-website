@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   background-color: #373a40; /* Dark theme background color */
@@ -29,7 +28,6 @@ body {
 
 nav {
   background-color: #181818;
-  color: white;
   display: flex;
   margin-top: 10px;
   justify-content: center;
@@ -131,7 +129,6 @@ body.dark-mode .theme-icon {
   text-align: center;
   overflow: hidden;
   position: relative;
-  
 }
 
 .banner .slider {
@@ -170,7 +167,7 @@ body.dark-mode .theme-icon {
   object-fit: cover;
   pointer-events: none;
 }
-.anime .slider .item img::after{
+.anime .slider .item img::after {
   pointer-events: none;
   background: rgba(255, 255, 255, 0);
 }
@@ -218,24 +215,47 @@ body.dark-mode .theme-icon {
   }
 }
 /* Top anime section */
-.top h2{
+.top h2 {
   text-align: center;
   color: rgb(255, 51, 51);
-  font-family:  cursive;
+  font-family: cursive;
   font-weight: bold;
   text-decoration: underline;
   margin-top: -100px;
 }
-.anime .img img {
+.topanime {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+.topanime img {
   width: 250px;
-  margin: 15px;
+  display: flex;
   border-radius: 10px;
 }
-.anime .title h3{
-  margin-left: 15px;
-  margin-top: 0px;
-  text-align: center;
+.topanime button {
+  display: grid;
 }
-.anime{
-  display: flex;
+
+.topanime .btn:hover {
+  background-color: gray; /* Darker shade of blue */
+  transform: translateY(-5px); 
+}
+.topanime .btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+.topanime span {
+  background: linear-gradient(black, lime);
+  position: relative;
+  bottom: 30px;
+  padding-right: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
